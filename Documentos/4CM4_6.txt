@@ -1,0 +1,10 @@
+Preguntas:
+
+¿Qué tipo de protocolo utiliza HTTP?
+
+  TCP
+  UDP
+  SNMP
+  TELNET
+
+¿Cómo 

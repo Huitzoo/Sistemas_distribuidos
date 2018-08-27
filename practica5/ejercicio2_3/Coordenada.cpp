@@ -1,4 +1,4 @@
-#include "Rectangulo.h"
+#include "Poligono.h"
 #include "Coordenada.h"
 #include <iostream>
 using namespace std;

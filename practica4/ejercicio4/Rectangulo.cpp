@@ -25,10 +25,8 @@ void Rectangulo::imprimeEsq ()
 
 void Rectangulo::obtenerArea() {
   double alto, ancho;
-  alto = superiorIzq.obtenerY ();
-  inferiorDer.obtenerY();
-  ancho = inferiorDer.obtenerX ();
-  superiorIzq.obtenerX ();
+  alto = superiorIzq.obtenerY ()-inferiorDer.obtenerY();
+  ancho = inferiorDer.obtenerX ()-superiorIzq.obtenerX ();
   cout << "El área del rectángulo es = " << ancho * alto << endl;
 }
 
