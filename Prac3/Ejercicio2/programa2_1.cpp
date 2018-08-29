@@ -11,12 +11,12 @@ int masViejaC(Fecha *fecha1, Fecha *fecha2);
 int main(){
   Fecha a, b;
   int i = 0;
-  while(i < 500000000){
+  while(i < 5000000){
     //limite_inferior + rand() % (limite_superior +1 - limite_inferior)
     a.inicializaFecha(1 + rand() % (31 + 1 - 1), 1 + rand() % (12 + 1 - 1), 1 + rand() % (2018 + 1 - 1));
     b.inicializaFecha(1 + rand() % (31 + 1 - 1), 1 + rand() % (12 + 1 - 1), 1 + rand() % (2018 + 1 - 1));
-    masVieja(a,b);
-    //masViejaRef(a,b);
+    //masVieja(a,b);
+    masViejaRef(a,b);
     //masViejaC(&a,&b);
     i++;
   }

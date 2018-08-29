@@ -4,16 +4,8 @@
 
 using namespace std;
 
-/*
-Fecha::Fecha(int dd, int mm, int aaaa){
-  mes = mm;
-  dia = dd;
-  anio = aaaa;
-  //arreglo = new int[10000];
-}*/
-
 Fecha::Fecha(int dd, int mm, int aaaa) : dia(dd), mes(mm), anio(aaaa){
-  unsigned int numeroElementos = 1000000000;
+  int numeroElementos = 10000000;
   arreglo = new int[numeroElementos];
   if (!arreglo)
     exit(1);

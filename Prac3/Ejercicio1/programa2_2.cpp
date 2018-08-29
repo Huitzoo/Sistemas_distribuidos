@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-  Fecha a(1, 12, 1990), b(3, 11, 2017), c(0, 9, 2020), d;
+  Fecha a(1, 12, 1990), b(3, 11, 2017), c(3, 9, 2016), d;
 
   a.muestraFecha();
   b.muestraFecha();
