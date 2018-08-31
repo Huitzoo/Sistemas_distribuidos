@@ -1,29 +1,34 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 using namespace std;
 
 int main () {
   string palabra = "";
   string cadenota = "";
-  int palabras = 1800000;
-  srand(5);
+  //int palabras = 10;
+  srand(time(NULL));
+  int palabras = 0;
+  cout << "Numero: " << '\n';
+  cin >> palabras;
   for (int i = 0; i < palabras; i++) {
     for (int j = 0; j < 3; j++){
       int asciiVal = rand()%26+65;
       char asciiChar = asciiVal;
-      palabra = palabra + asciiChar;
+      palabra+=asciiChar;
     }
-    palabra.append(" ");
+    palabra+=' ';
     cadenota.append(palabra);
+    palabra = "";
   }
-  cout << cadenota<<endl;
-  int longitud = cadenota.length();
   int encontradas = 0;
-  for (int i = 0; i < longitud; i++) {
+  for (int i = 0; i < cadenota.size() ; i++) {
     if(cadenota[i] == 'I'){
+      i += 1;
       if(cadenota[i] == 'P'){
+        i += 1;
         if(cadenota[i] == 'N'){
-          encontradas++;
+          encontradas+=1;
         }
       }
     }

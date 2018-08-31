@@ -4,11 +4,14 @@
 using namespace std;
 
 int main () {
-  int palabras = 100;
+  //int palabras = 1000000;
   char *cadenota = NULL;
-  //char *cadenota = (char*)malloc(palabras*sizeof(palabras));
+  //char *cadenota = (char*)malloc(5);
   char *palabra = (char*)malloc(4);
   int tamano = 0;
+  int palabras = 0;
+  cout << "Numero: " << '\n';
+  cin >> palabras;
   srand(time(NULL));
   for (int i = 1; i < palabras; i++) {
     for (int j = 0; j < 3; j++){
@@ -16,22 +19,19 @@ int main () {
       char asciiChar = asciiVal;
       palabra[j] = asciiChar;
     }
-    //cout << sizeof(palabra) << endl;
-    cout << tamano << endl;
-    //cout << sizeof(palabra)*i << endl;
-    cadenota = (char*)realloc(cadenota,i*8);
-    //cout << sizeof(cadenota) << endl;
-    memcpy(&cadenota[tamano],palabra,8);
-    tamano += sizeof(palabra);
+    palabra[3] = ' ';
+    cadenota = (char*)realloc(cadenota,i*4);
+    memcpy(cadenota+tamano,palabra,4);
+    tamano += 4;
   }
-  int longitud = strlen(cadenota);
-  cout << cadenota << endl;
   int encontradas = 0;
-  for (int i = 0; i < longitud+1; i++) {
+  for (int i = 0; i < strlen(cadenota) ; i++) {
     if(cadenota[i] == 'I'){
+      i += 1;
       if(cadenota[i] == 'P'){
+        i += 1;
         if(cadenota[i] == 'N'){
-          encontradas++;
+          encontradas+=1;
         }
       }
     }
