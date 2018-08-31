@@ -13,6 +13,8 @@ double Coordenada::obtenerX ()
   return x;
 }
 
+
+
 double Coordenada::obtenerY ()
 {
   return y;

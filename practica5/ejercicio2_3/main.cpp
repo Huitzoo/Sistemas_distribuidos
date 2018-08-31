@@ -2,7 +2,6 @@
 #include "Poligono.h"
 #include <time.h>
 #include <iostream>
-#include <ctime>// include this header
 using namespace std;
 
 
@@ -23,11 +22,11 @@ int main ()
     //formula para obtener rangos de random
     // variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior) ;
     v[i].sumarVertices(vertices);
-    //v[i].agregarVerticeReserve(vertices);
-    for (int j = 0; j < vertices; j++) {
-      v[i].agregarVerticePush(Coordenada(1.3,34.9));
+    v[i].agregarVerticeReserve(vertices);
+    //for (int j = 0; j < vertices; j++) {
+      //v[i].agregarVerticePush(Coordenada(1.3,34.9));
       //v[i].mostrarVertices();
-    }
+    //}
   }
   int stop_s=clock();
   cout << "Tiempo: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
