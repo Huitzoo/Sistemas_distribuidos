@@ -1,0 +1,30 @@
+¿Cómo funciona la Multicast communication como mejor modelo de comunicación?
+Cuando el servicio se implementa como una cantidad de procesos diferentes en diferentes computadoras, quizás para proporcionar tolerancia a fallas
+Utilizando el intercambio de mensajes por parejas.
+Procesar a un grupo de otros procesos que pueden ser necesarios.
+Sin utilizar una operación de multidifusión.
+
+¿Qué es la tolerancia a fallas basada en servicios replicados?
+Es un servicio replicado que consiste en un grupo de servidores.
+Es un servicio donde las solicitudes del cliente no son multidifusión a todos los miembros del grupo, cada uno de los cuales realiza una operación idéntica.
+Servicio en el que cuando algunos de los miembros falla, los clientes no pueden ser atendidos.
+Los mensajes de multidifusión pueden ser utilizado por servidores y clientes para localizar los servicios de descubrimiento disponibles a fin de
+registrar sus interfaces.
+
+¿En qué consiste el mejor rendimiento a través de datos replicados?
+Consiste en que los datos se replican para aumentar el rendimiento de un servicio.
+Cada vez que los datos cambian, el valor previo es multicast para los procesos, manejando las réplicas.
+En la a multidifusión a un grupo que se puede usar para notificar procesos cuando un cambio es percibido.
+Consiste en que los protocolos pueden hacer uso de la multidifusión grupal para diseminar eventos.
+
+¿En qué se basa la multidifusión IP?
+Se basa en el Protocolo de Internet.
+Se basa en los puertos niveles TCP y UDP.
+En la multidifusión IP.
+Se basa en el envío de datagramas UDP.
+
+¿Cuál es el uso de los Enrutadores de multidifusión?
+Pueden ser de multidifusión tanto en una red local como en el Internet más amplio.
+Son usados para la capacidad de difusión de la red local.
+Para ilimitar la distancia de propagación de una multidifusión datagrama.
+Para comprender cómo los enrutadores saben qué otros enrutadores tienen miembros de un grupo de difusión.
