@@ -1,4 +1,0 @@
-Ejercicio 2: 
-
-	El error más común es que cuando dividimos con dos enteros nos da un resultado entero sin tomar en cuenta que muchas veces los números no son exactamente divisibles, como 10/3, provocando así una falta de precisión en el resultado.
-Sin embargo al momento de dividir un entero y un flotante el resultado es más preciso, ya que toma en cuenta los decimales que puede llegar a tener el resultado.
