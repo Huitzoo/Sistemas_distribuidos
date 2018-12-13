@@ -8,6 +8,7 @@ Respuesta::Respuesta(int port){
 struct mensaje* Respuesta::getRequest(void){
     PaqueteDatagrama p(sizeof(struct mensaje));
     int tam = socketlocal->recibe(p);
+    
     //int tam = socketlocal->recibeTimeout(p, 1, 500000);
     struct mensaje * msg = (struct mensaje*) p.obtieneDatos();
     struct mensaje *recibido = (struct mensaje *)malloc(sizeof(struct mensaje));

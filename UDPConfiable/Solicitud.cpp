@@ -3,7 +3,7 @@
 #include <cstring>
 
 Solicitud::Solicitud() {
-    socketlocal = new SocketDatagrama(0);
+    socketlocal = new SocketDatagrama(7201);
     peticion = 0;
 }
 

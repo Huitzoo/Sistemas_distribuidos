@@ -18,28 +18,7 @@ int main(int argc, char*argv[])
     while(true) {
         msg = respuesta.getRequest();
         idrequest = msg->requestId ;
-        if (idrequest <= idrequestLast) {
-            printf("RequestID: %d\n",msg -> requestId);
-            printf("LAST RequestID: %d\n",idrequestLast);
-            printf("Llego Tarde\n");
-            continue;
-            //respuesta.sendReply((char *)nbdS.c_str(), msg->IP, msg->puerto);
-        }
-        if(msg->operationId == 1){
-            printf("%s\n", "operationId 1");
-            nbdS = to_string(nbd);
-            printf("Saldo: %d\n",nbd);
-            respuesta.sendReply((char *)nbdS.c_str(), msg->IP, msg->puerto);
-        }
-        else if(msg->operationId == 2){
-            printf("%s\n", "operationId 2");
-            nbd+=1;
-            nbdS = to_string(nbd);
-            printf("Saldo: %d\n",nbd);
-            respuesta.sendReply((char *)nbdS.c_str(), msg->IP, msg->puerto);
-            printf("Enviando: %d\n",nbd);
-        }
-        idrequestLast = msg->requestId;
-        
+        nbdS = to_string(nbd);
+        respuesta.sendReply((char *)nbdS.c_str(), msg->IP, msg->puerto);    
     }
 }
